@@ -10,8 +10,11 @@
     <button onclick="calculation+='2'">2</button>
     <button onclick="calculation+='3'">3</button>
     <button onclick="calculation+='+'">+</button>
-    <button>=</button>
+    <button onclick=" calculation = eval(calculation); document.getElementById('paragraph').innerHTML=calculation;">=</button>
+
+
 </body>
+<p id="paragraph"></p>
 <script>
     let calculation = ''
 </script>
